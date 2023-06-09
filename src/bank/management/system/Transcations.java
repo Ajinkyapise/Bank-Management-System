@@ -94,6 +94,10 @@ public class Transcations extends JFrame implements ActionListener {
             setVisible(false);
             new Fastcash(pinnumber).setVisible(true);
         }
+        else if(ae.getSource()==pinchange){
+            setVisible(false);
+            new pinchange(pinnumber).setVisible(true);
+        }
     }
     
     public static void main(String args[]){
