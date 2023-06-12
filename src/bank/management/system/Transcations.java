@@ -98,6 +98,13 @@ public class Transcations extends JFrame implements ActionListener {
             setVisible(false);
             new pinchange(pinnumber).setVisible(true);
         }
+        else if(ae.getSource()==balanceenq){
+            setVisible(false);
+            new balanceenquiry(pinnumber).setVisible(true);
+        }
+        else if(ae.getSource()==ministatement){
+            new ministatement(pinnumber).setVisible(true);
+        }
     }
     
     public static void main(String args[]){
